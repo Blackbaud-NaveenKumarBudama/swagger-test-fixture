@@ -1,43 +1,7 @@
 {
   "openapi": "3.0.4",
   "info": { "title": "Test Agent Tools API", "version": "1.0" },
-  "paths": {
-    "/agent/widget-status": {
-      "get": {
-        "operationId": "GetWidgetStatus",
-        "security": [{ "agent": [] }],
-        "parameters": [
-          {
-            "name": "widgetId",
-            "in": "query",
-            "required": true,
-            "schema": { "type": "string" }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "status": { "type": "string" }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "x-agent-tool-properties": {
-          "name": "get_widget_status",
-          "title": "Get Widget Status",
-          "description": "Returns the current status of a widget.",
-          "permissionScope": "test-tool-scope"
-        }
-      }
-    }
-  },
+  "paths": {},
   "components": {
     "securitySchemes": {
       "agent": {
