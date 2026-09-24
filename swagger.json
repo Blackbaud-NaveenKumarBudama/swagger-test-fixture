@@ -22,7 +22,7 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "status": { "type": "
+                    "status": { "type": "string" }
                   }
                 }
               }
@@ -30,9 +30,9 @@
           }
         },
         "x-agent-tool-properties": {
-          "name": "get_thingamajig_status
+          "name": "get_thingamajig_status",
           "title": "Get Thingamajig Status",
-          "description": "Returns the cur",
+          "description": "Returns the current status of a thingamajig.",
           "permissionScope": "test-tool-scope"
         }
       }
@@ -44,7 +44,7 @@
         "type": "oauth2",
         "flows": {
           "clientCredentials": {
-            "tokenUrl": "https://example.
+            "tokenUrl": "https://example.com/oauth2/token",
             "scopes": {}
           }
         }
