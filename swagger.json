@@ -44,7 +44,8 @@
           "name": "get_thingamajig_status",
           "title": "Get Thingamajig Status",
           "description": "Returns the current status of a thingamajig.",
-          "permissionScope": "test-tool-scope"
+          "permissionScope": "test-tool-scope",
+          "exposeExternally": "yes"
         }
       }
     }
